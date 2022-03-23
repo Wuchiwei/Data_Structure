@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A339170C27EB0B9A00B3E04A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339170B27EB0B9A00B3E04A /* Queue.swift */; };
+		A339170E27EB14DD00B3E04A /* QueueArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339170D27EB14DD00B3E04A /* QueueArray.swift */; };
+		A339171027EB1C9C00B3E04A /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339170F27EB1C9C00B3E04A /* DoubleLinkedList.swift */; };
+		A339171227EB1CE100B3E04A /* BidirectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339171127EB1CE100B3E04A /* BidirectionNode.swift */; };
 		A3CB0BF027E4687300D85D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0BEF27E4687300D85D1C /* AppDelegate.swift */; };
 		A3CB0BF227E4687300D85D1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0BF127E4687300D85D1C /* SceneDelegate.swift */; };
 		A3CB0BF427E4687300D85D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0BF327E4687300D85D1C /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A339170B27EB0B9A00B3E04A /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		A339170D27EB14DD00B3E04A /* QueueArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueArray.swift; sourceTree = "<group>"; };
+		A339170F27EB1C9C00B3E04A /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
+		A339171127EB1CE100B3E04A /* BidirectionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionNode.swift; sourceTree = "<group>"; };
 		A3CB0BEC27E4687300D85D1C /* DataStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CB0BEF27E4687300D85D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3CB0BF127E4687300D85D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A339170A27EB0B7A00B3E04A /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				A339170B27EB0B9A00B3E04A /* Queue.swift */,
+				A339170D27EB14DD00B3E04A /* QueueArray.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		A3CB0BE327E4687300D85D1C = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +122,9 @@
 		A3CB0BEE27E4687300D85D1C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				A3CB0C1F27E4688E00D85D1C /* Stack */,
 				A3CB0C2227E4BA1C00D85D1C /* LinkedList */,
+				A339170A27EB0B7A00B3E04A /* Queue */,
+				A3CB0C1F27E4688E00D85D1C /* Stack */,
 				A3CB0BEF27E4687300D85D1C /* AppDelegate.swift */,
 				A3CB0BF127E4687300D85D1C /* SceneDelegate.swift */,
 				A3CB0BF327E4687300D85D1C /* ViewController.swift */,
@@ -147,7 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				A3CB0C2327E4BA3100D85D1C /* Node.swift */,
+				A339171127EB1CE100B3E04A /* BidirectionNode.swift */,
 				A3CB0C2527E4BBE700D85D1C /* LinkedList.swift */,
+				A339170F27EB1C9C00B3E04A /* DoubleLinkedList.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -284,11 +304,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CB0C2627E4BBE700D85D1C /* LinkedList.swift in Sources */,
+				A339170C27EB0B9A00B3E04A /* Queue.swift in Sources */,
 				A3CB0C2127E4689E00D85D1C /* Stack.swift in Sources */,
 				A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */,
+				A339171027EB1C9C00B3E04A /* DoubleLinkedList.swift in Sources */,
 				A3CB0BF427E4687300D85D1C /* ViewController.swift in Sources */,
 				A3CB0BF027E4687300D85D1C /* AppDelegate.swift in Sources */,
 				A3CB0BF227E4687300D85D1C /* SceneDelegate.swift in Sources */,
+				A339171227EB1CE100B3E04A /* BidirectionNode.swift in Sources */,
+				A339170E27EB14DD00B3E04A /* QueueArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
