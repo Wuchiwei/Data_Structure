@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol DoubleLinkedList {
+public protocol DoublyLinkedList {
     
     associatedtype Element
     
@@ -23,7 +23,7 @@ public protocol DoubleLinkedList {
     var peek: Element? { get }
 }
 
-class LKDoubleLinkedList<T>: DoubleLinkedList {
+class LKDoublyLinkedList<T>: DoublyLinkedList {
     
     typealias Element = T
     
@@ -148,5 +148,14 @@ class LKDoubleLinkedList<T>: DoubleLinkedList {
         }
         
         return removeNode
+    }
+}
+
+extension LKDoublyLinkedList: CustomStringConvertible {
+    public var description: String {
+        guard let head = head else {
+            return "Empty list"
+        }
+        return String(describing: head)
     }
 }

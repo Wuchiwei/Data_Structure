@@ -21,3 +21,12 @@ public class BidirectionNode<Value> {
         self.next = next
     }
 }
+
+extension BidirectionNode: CustomDebugStringConvertible {
+    public var debugDescription: String {
+        guard let next = next else {
+            return "\(value)"
+        }
+        return "\(value) -> " + String(describing: next)
+    }
+}
