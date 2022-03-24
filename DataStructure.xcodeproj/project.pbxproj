@@ -24,6 +24,7 @@
 		A3CB0C2127E4689E00D85D1C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0C2027E4689E00D85D1C /* Stack.swift */; };
 		A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0C2327E4BA3100D85D1C /* Node.swift */; };
 		A3CB0C2627E4BBE700D85D1C /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0C2527E4BBE700D85D1C /* LinkedList.swift */; };
+		A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041027EC536600EABBF1 /* RingBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A3CB0C2027E4689E00D85D1C /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		A3CB0C2327E4BA3100D85D1C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		A3CB0C2527E4BBE700D85D1C /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		A3E7041027EC536600EABBF1 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		A3CB0BEE27E4687300D85D1C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				A3E7040F27EC534400EABBF1 /* RingBuffer */,
 				A3CB0C2227E4BA1C00D85D1C /* LinkedList */,
 				A339170A27EB0B7A00B3E04A /* Queue */,
 				A3CB0C1F27E4688E00D85D1C /* Stack */,
@@ -173,6 +176,14 @@
 				A339170F27EB1C9C00B3E04A /* DoublyLinkedList.swift */,
 			);
 			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		A3E7040F27EC534400EABBF1 /* RingBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				A3E7041027EC536600EABBF1 /* RingBuffer.swift */,
+			);
+			path = RingBuffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				A3CB0C2127E4689E00D85D1C /* Stack.swift in Sources */,
 				A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */,
 				A339171027EB1C9C00B3E04A /* DoublyLinkedList.swift in Sources */,
+				A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */,
 				A3CB0BF427E4687300D85D1C /* ViewController.swift in Sources */,
 				A3CB0BF027E4687300D85D1C /* AppDelegate.swift in Sources */,
 				A3CB0BF227E4687300D85D1C /* SceneDelegate.swift in Sources */,
