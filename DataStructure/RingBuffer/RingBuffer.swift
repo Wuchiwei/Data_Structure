@@ -15,6 +15,7 @@ public protocol RingBuffer {
     init(size: Int)
     var isEmpty: Bool { get }
     var isFull: Bool { get }
+    var peek: Element? { get }
     mutating func write(_ element: Element) -> Bool
     mutating func read() -> Element?
 }
@@ -60,6 +61,11 @@ public struct LKRingBuffer<T>: RingBuffer {
         case .none:
             return false
         }
+    }
+    
+    public var peek: T? {
+        guard !isEmpty else { return nil }
+        return array[readIndex]
     }
     
     public mutating func read() -> T? {

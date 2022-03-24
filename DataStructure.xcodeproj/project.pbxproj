@@ -25,6 +25,7 @@
 		A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0C2327E4BA3100D85D1C /* Node.swift */; };
 		A3CB0C2627E4BBE700D85D1C /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB0C2527E4BBE700D85D1C /* LinkedList.swift */; };
 		A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041027EC536600EABBF1 /* RingBuffer.swift */; };
+		A3E7041327EC768900EABBF1 /* QueueRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041227EC768900EABBF1 /* QueueRingBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		A3CB0C2327E4BA3100D85D1C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		A3CB0C2527E4BBE700D85D1C /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		A3E7041027EC536600EABBF1 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		A3E7041227EC768900EABBF1 /* QueueRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRingBuffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A339170B27EB0B9A00B3E04A /* Queue.swift */,
 				A339170D27EB14DD00B3E04A /* QueueArray.swift */,
 				A339171327EB325800B3E04A /* QueueLinkedList.swift */,
+				A3E7041227EC768900EABBF1 /* QueueRingBuffer.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */,
 				A339171027EB1C9C00B3E04A /* DoublyLinkedList.swift in Sources */,
 				A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */,
+				A3E7041327EC768900EABBF1 /* QueueRingBuffer.swift in Sources */,
 				A3CB0BF427E4687300D85D1C /* ViewController.swift in Sources */,
 				A3CB0BF027E4687300D85D1C /* AppDelegate.swift in Sources */,
 				A3CB0BF227E4687300D85D1C /* SceneDelegate.swift in Sources */,
