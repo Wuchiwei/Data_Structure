@@ -28,6 +28,8 @@ public struct QueueArray<T>: Queue {
     public var peek: T? { array.first }
     
     public var isEmpty: Bool { array.isEmpty }
+    
+    public var count: Int { array.count }
 }
 
 extension QueueArray: CustomStringConvertible {

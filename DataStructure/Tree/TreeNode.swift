@@ -13,6 +13,7 @@ public protocol TreeNode {
     
     var value: Value { get set }
     var children: [AnotherTreeNode] { get set }
+    var parent: AnotherTreeNode? { get }
 }
 
 public class LKTreeNode<T>: TreeNode {
@@ -22,10 +23,13 @@ public class LKTreeNode<T>: TreeNode {
     
     public var value: T
     
-    public var children: [LKTreeNode<T>] = []
+    public var children: [AnotherTreeNode] = []
     
-    public init(_ value: T) {
+    public weak var parent: AnotherTreeNode?
+    
+    public init(_ value: T, parent: AnotherTreeNode?) {
         self.value = value
+        self.parent = parent
     }
     
     public func add(_ child: AnotherTreeNode) {
@@ -52,6 +56,31 @@ extension LKTreeNode {
         while let node = queue.dequeue() {
             visit(node)
             node.children.forEach{ queue.enqueue($0) }
+        }
+    }
+}
+
+//MARK: - Level-Order Traversal print level by level
+extension LKTreeNode {
+    public func printEachLevel(for tree: AnotherTreeNode) {
+        
+        var queue = QueueArray<AnotherTreeNode>()
+        var nodeLeftInCurrentLevel = 0
+        
+        queue.enqueue(tree)
+        
+        while !queue.isEmpty {
+            
+            nodeLeftInCurrentLevel = queue.count
+            
+            while nodeLeftInCurrentLevel > 0 {
+                guard let node = queue.dequeue() else { break }
+                print("\(node.value) ", terminator: "")
+                node.children.forEach{ queue.enqueue($0) }
+                nodeLeftInCurrentLevel -= 1
+            }
+            
+            print()
         }
     }
 }
