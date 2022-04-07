@@ -27,6 +27,7 @@
 		A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041027EC536600EABBF1 /* RingBuffer.swift */; };
 		A3E7041327EC768900EABBF1 /* QueueRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041227EC768900EABBF1 /* QueueRingBuffer.swift */; };
 		A3E7041527EC7CD500EABBF1 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041427EC7CD500EABBF1 /* QueueStack.swift */; };
+		A3F6209327FF27F900FC04B2 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209227FF27F900FC04B2 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		A3E7041027EC536600EABBF1 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		A3E7041227EC768900EABBF1 /* QueueRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRingBuffer.swift; sourceTree = "<group>"; };
 		A3E7041427EC7CD500EABBF1 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
+		A3F6209227FF27F900FC04B2 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				A3CB0C1F27E4688E00D85D1C /* Stack */,
 				A3CB0BEF27E4687300D85D1C /* AppDelegate.swift */,
 				A3CB0BF127E4687300D85D1C /* SceneDelegate.swift */,
+				A3F6209127FF27E100FC04B2 /* Tree */,
 				A3CB0BF327E4687300D85D1C /* ViewController.swift */,
 				A3CB0BF527E4687300D85D1C /* Main.storyboard */,
 				A3CB0BF827E4687400D85D1C /* Assets.xcassets */,
@@ -190,6 +193,14 @@
 				A3E7041027EC536600EABBF1 /* RingBuffer.swift */,
 			);
 			path = RingBuffer;
+			sourceTree = "<group>";
+		};
+		A3F6209127FF27E100FC04B2 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				A3F6209227FF27F900FC04B2 /* TreeNode.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 				A339171027EB1C9C00B3E04A /* DoublyLinkedList.swift in Sources */,
 				A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */,
 				A3E7041327EC768900EABBF1 /* QueueRingBuffer.swift in Sources */,
+				A3F6209327FF27F900FC04B2 /* TreeNode.swift in Sources */,
 				A3CB0BF427E4687300D85D1C /* ViewController.swift in Sources */,
 				A3CB0BF027E4687300D85D1C /* AppDelegate.swift in Sources */,
 				A3CB0BF227E4687300D85D1C /* SceneDelegate.swift in Sources */,
