@@ -9,37 +9,37 @@ import Foundation
 
 public protocol TreeNode {
     associatedtype Value
-    associatedtype AnotherTreeNode: TreeNode where AnotherTreeNode.Value == Value
+    associatedtype NestedTreeNode: TreeNode where NestedTreeNode.Value == Value
     
     var value: Value { get set }
-    var children: [AnotherTreeNode] { get set }
-    var parent: AnotherTreeNode? { get }
+    var children: [NestedTreeNode] { get set }
+    var parent: NestedTreeNode? { get }
 }
 
 public class LKTreeNode<T>: TreeNode {
     
     public typealias Value = T
-    public typealias AnotherTreeNode = LKTreeNode<T>
+    public typealias NestedTreeNode = LKTreeNode<T>
     
     public var value: T
     
-    public var children: [AnotherTreeNode] = []
+    public var children: [NestedTreeNode] = []
     
-    public weak var parent: AnotherTreeNode?
+    public weak var parent: NestedTreeNode?
     
-    public init(_ value: T, parent: AnotherTreeNode?) {
+    public init(_ value: T, parent: NestedTreeNode?) {
         self.value = value
         self.parent = parent
     }
     
-    public func add(_ child: AnotherTreeNode) {
+    public func add(_ child: NestedTreeNode) {
         children.append(child)
     }
 }
 
 //MARK: - Depth-First Traversal
 extension LKTreeNode {
-    public func forEachDepthFirst(visit: (AnotherTreeNode) -> Void) {
+    public func forEachDepthFirst(visit: (NestedTreeNode) -> Void) {
         visit(self)
         children.forEach{
             $0.forEachDepthFirst(visit: visit)
@@ -49,9 +49,9 @@ extension LKTreeNode {
 
 //MARK: - Level-Order Traversal
 extension LKTreeNode {
-    public func forEachLevelOrder(visit: (AnotherTreeNode) -> Void) {
+    public func forEachLevelOrder(visit: (NestedTreeNode) -> Void) {
         visit(self)
-        var queue = QueueArray<AnotherTreeNode>()
+        var queue = QueueArray<NestedTreeNode>()
         children.forEach{ queue.enqueue($0) }
         while let node = queue.dequeue() {
             visit(node)
@@ -62,9 +62,9 @@ extension LKTreeNode {
 
 //MARK: - Level-Order Traversal print level by level
 extension LKTreeNode {
-    public func printEachLevel(for tree: AnotherTreeNode) {
+    public func printEachLevel(for tree: NestedTreeNode) {
         
-        var queue = QueueArray<AnotherTreeNode>()
+        var queue = QueueArray<NestedTreeNode>()
         var nodeLeftInCurrentLevel = 0
         
         queue.enqueue(tree)
@@ -87,9 +87,9 @@ extension LKTreeNode {
 
 //MARK: - Search
 extension LKTreeNode where T: Equatable {
-    public func search(_ value: T) -> AnotherTreeNode? {
+    public func search(_ value: T) -> NestedTreeNode? {
         
-        var result: AnotherTreeNode?
+        var result: NestedTreeNode?
         
         forEachLevelOrder(visit: {
             if $0.value == value {
