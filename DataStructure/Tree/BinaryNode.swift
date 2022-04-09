@@ -107,3 +107,48 @@ extension LKBinaryNode {
         return 1 + max(anotherHeightMethod(node: node.leftChild), anotherHeightMethod(node: node.rightChild))
     }
 }
+
+extension LKBinaryNode {
+    
+    static func deserialize(from values: [Element?]) -> LKBinaryNode? {
+        var elements = Array(values.reversed())
+        return deserialize(from: &elements)
+    }
+    
+    private static func deserialize(from values: inout [Element?]) -> LKBinaryNode? {
+        
+        guard values.isEmpty == false,
+              let element = values.removeLast()
+        else {
+            return nil
+        }
+        
+        let node = LKBinaryNode(value: element)
+        node.leftChild = deserialize(from: &values)
+        node.rightChild = deserialize(from: &values)
+        return node
+    }
+    
+    static func serialize(from tree: LKBinaryNode) -> [Element?] {
+        var array: [Element?] = []
+        tree.preOrderTraversalWithNil(visit: { array.append($0) })
+        return array
+    }
+    
+    private func preOrderTraversalWithNil(visit: (Element?) -> Void) {
+        
+        visit(value)
+        
+        if let left = leftChild {
+            left.preOrderTraversalWithNil(visit: visit)
+        } else {
+            visit(nil)
+        }
+        
+        if let right = rightChild {
+            right.preOrderTraversalWithNil(visit: visit)
+        } else {
+            visit(nil)
+        }
+    }
+}
