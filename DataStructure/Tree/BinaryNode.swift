@@ -84,3 +84,26 @@ extension LKBinaryNode {
         visit(value)
     }
 }
+
+//MARK - Height of Tree
+extension LKBinaryNode {
+    func height() -> Int {
+        switch (leftChild?.height(), rightChild?.height()) {
+        case (nil, nil):
+            return 0
+        case (nil, .some(let right)):
+            return right + 1
+        case (.some(let left), nil):
+            return left + 1
+        case (.some(let left), .some(let right)):
+            return max(left, right) + 1
+        }
+    }
+    
+    func anotherHeightMethod(node: LKBinaryNode?) -> Int {
+        guard let node = node else {
+            return -1
+        }
+        return 1 + max(anotherHeightMethod(node: node.leftChild), anotherHeightMethod(node: node.rightChild))
+    }
+}
