@@ -29,6 +29,7 @@
 		A3E7041527EC7CD500EABBF1 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E7041427EC7CD500EABBF1 /* QueueStack.swift */; };
 		A3F6209327FF27F900FC04B2 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209227FF27F900FC04B2 /* TreeNode.swift */; };
 		A3F6209527FFEC8C00FC04B2 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */; };
+		A3F6209728054DFE00FC04B2 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A3E7041427EC7CD500EABBF1 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
 		A3F6209227FF27F900FC04B2 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
+		A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			children = (
 				A3F6209227FF27F900FC04B2 /* TreeNode.swift */,
 				A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */,
+				A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CB0C2627E4BBE700D85D1C /* LinkedList.swift in Sources */,
+				A3F6209728054DFE00FC04B2 /* BinarySearchTree.swift in Sources */,
 				A339170C27EB0B9A00B3E04A /* Queue.swift in Sources */,
 				A3CB0C2127E4689E00D85D1C /* Stack.swift in Sources */,
 				A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */,
