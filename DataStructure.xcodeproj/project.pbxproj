@@ -31,6 +31,8 @@
 		A3F6209527FFEC8C00FC04B2 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */; };
 		A3F6209728054DFE00FC04B2 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */; };
 		A3F6209928056ABF00FC04B2 /* AVL Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209828056ABF00FC04B2 /* AVL Tree.swift */; };
+		A3F6209B28086D5500FC04B2 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209A28086D5500FC04B2 /* TrieNode.swift */; };
+		A3F6209E28086E8200FC04B2 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209D28086E8200FC04B2 /* Trie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 		A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		A3F6209828056ABF00FC04B2 /* AVL Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVL Tree.swift"; sourceTree = "<group>"; };
+		A3F6209A28086D5500FC04B2 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		A3F6209D28086E8200FC04B2 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 				A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */,
 				A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */,
 				A3F6209828056ABF00FC04B2 /* AVL Tree.swift */,
+				A3F6209A28086D5500FC04B2 /* TrieNode.swift */,
+				A3F6209D28086E8200FC04B2 /* Trie.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -348,7 +354,9 @@
 				A3F6209728054DFE00FC04B2 /* BinarySearchTree.swift in Sources */,
 				A339170C27EB0B9A00B3E04A /* Queue.swift in Sources */,
 				A3CB0C2127E4689E00D85D1C /* Stack.swift in Sources */,
+				A3F6209E28086E8200FC04B2 /* Trie.swift in Sources */,
 				A3CB0C2427E4BA3100D85D1C /* Node.swift in Sources */,
+				A3F6209B28086D5500FC04B2 /* TrieNode.swift in Sources */,
 				A3E7041527EC7CD500EABBF1 /* QueueStack.swift in Sources */,
 				A339171027EB1C9C00B3E04A /* DoublyLinkedList.swift in Sources */,
 				A3F6209527FFEC8C00FC04B2 /* BinaryNode.swift in Sources */,
