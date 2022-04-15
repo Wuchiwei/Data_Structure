@@ -208,14 +208,22 @@
 		A3F6209127FF27E100FC04B2 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				A3F6209F2809179D00FC04B2 /* Trie */,
 				A3F6209227FF27F900FC04B2 /* TreeNode.swift */,
 				A3F6209427FFEC8C00FC04B2 /* BinaryNode.swift */,
 				A3F6209628054DFE00FC04B2 /* BinarySearchTree.swift */,
 				A3F6209828056ABF00FC04B2 /* AVL Tree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		A3F6209F2809179D00FC04B2 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
 				A3F6209A28086D5500FC04B2 /* TrieNode.swift */,
 				A3F6209D28086E8200FC04B2 /* Trie.swift */,
 			);
-			path = Tree;
+			path = Trie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
