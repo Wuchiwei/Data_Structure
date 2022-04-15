@@ -34,6 +34,7 @@
 		A3F6209B28086D5500FC04B2 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209A28086D5500FC04B2 /* TrieNode.swift */; };
 		A3F6209E28086E8200FC04B2 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209D28086E8200FC04B2 /* Trie.swift */; };
 		A3F620A22809186B00FC04B2 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F620A12809186B00FC04B2 /* BinarySearch.swift */; };
+		A3F620A528092B9000FC04B2 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F620A428092B9000FC04B2 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		A3F6209A28086D5500FC04B2 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		A3F6209D28086E8200FC04B2 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		A3F620A12809186B00FC04B2 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		A3F620A428092B9000FC04B2 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A3F620A02809180E00FC04B2 /* Binary Search */,
+				A3F620A328092B7400FC04B2 /* Heap */,
 				A3CB0C2227E4BA1C00D85D1C /* LinkedList */,
 				A339170A27EB0B7A00B3E04A /* Queue */,
 				A3E7040F27EC534400EABBF1 /* RingBuffer */,
@@ -235,6 +238,14 @@
 				A3F620A12809186B00FC04B2 /* BinarySearch.swift */,
 			);
 			path = "Binary Search";
+			sourceTree = "<group>";
+		};
+		A3F620A328092B7400FC04B2 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				A3F620A428092B9000FC04B2 /* Heap.swift */,
+			);
+			path = Heap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				A339171427EB325800B3E04A /* QueueLinkedList.swift in Sources */,
 				A339171227EB1CE100B3E04A /* BidirectionNode.swift in Sources */,
 				A339170E27EB14DD00B3E04A /* QueueArray.swift in Sources */,
+				A3F620A528092B9000FC04B2 /* Heap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
