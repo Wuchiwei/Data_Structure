@@ -33,6 +33,7 @@
 		A3F6209928056ABF00FC04B2 /* AVL Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209828056ABF00FC04B2 /* AVL Tree.swift */; };
 		A3F6209B28086D5500FC04B2 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209A28086D5500FC04B2 /* TrieNode.swift */; };
 		A3F6209E28086E8200FC04B2 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6209D28086E8200FC04B2 /* Trie.swift */; };
+		A3F620A22809186B00FC04B2 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F620A12809186B00FC04B2 /* BinarySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		A3F6209828056ABF00FC04B2 /* AVL Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVL Tree.swift"; sourceTree = "<group>"; };
 		A3F6209A28086D5500FC04B2 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		A3F6209D28086E8200FC04B2 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		A3F620A12809186B00FC04B2 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +147,10 @@
 		A3CB0BEE27E4687300D85D1C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				A3E7040F27EC534400EABBF1 /* RingBuffer */,
+				A3F620A02809180E00FC04B2 /* Binary Search */,
 				A3CB0C2227E4BA1C00D85D1C /* LinkedList */,
 				A339170A27EB0B7A00B3E04A /* Queue */,
+				A3E7040F27EC534400EABBF1 /* RingBuffer */,
 				A3CB0C1F27E4688E00D85D1C /* Stack */,
 				A3F6209127FF27E100FC04B2 /* Tree */,
 				A3CB0BEF27E4687300D85D1C /* AppDelegate.swift */,
@@ -224,6 +227,14 @@
 				A3F6209D28086E8200FC04B2 /* Trie.swift */,
 			);
 			path = Trie;
+			sourceTree = "<group>";
+		};
+		A3F620A02809180E00FC04B2 /* Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				A3F620A12809186B00FC04B2 /* BinarySearch.swift */,
+			);
+			path = "Binary Search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 				A3E7041527EC7CD500EABBF1 /* QueueStack.swift in Sources */,
 				A339171027EB1C9C00B3E04A /* DoublyLinkedList.swift in Sources */,
 				A3F6209527FFEC8C00FC04B2 /* BinaryNode.swift in Sources */,
+				A3F620A22809186B00FC04B2 /* BinarySearch.swift in Sources */,
 				A3E7041127EC536600EABBF1 /* RingBuffer.swift in Sources */,
 				A3E7041327EC768900EABBF1 /* QueueRingBuffer.swift in Sources */,
 				A3F6209327FF27F900FC04B2 /* TreeNode.swift in Sources */,
